@@ -1,5 +1,6 @@
 import WaitlistForm from "../components/WaitlistForm";
-import Amenities from "../components/Amenities"; // Import your beautiful new amenities section
+import Amenities from "../components/Amenities";
+import Locations from "../components/Locations"; // Import the Locations showcase
 
 export default function Home() {
   return (
@@ -86,6 +87,9 @@ export default function Home() {
 
       {/* Amenities Section */}
       <Amenities />
+
+      {/* Locations Section */}
+      <Locations />
     </>
   );
 }

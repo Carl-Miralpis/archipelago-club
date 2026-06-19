@@ -38,7 +38,7 @@ export default function WaitlistForm() {
               disabled={status === "submitting"}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter youremail"
+              placeholder="Enter your Email"
               className="w-full rounded border border-stone-800 bg-stone-900/60 px-4 py-3 text-base text-stone-100 placeholder-stone-500 shadow-inner focus:border-amber-500 focus:outline-none focus:ring-1 focus:ring-amber-500 transition-all disabled:opacity-50"
             />
           </div>
