@@ -15,8 +15,8 @@ export default function Footer() {
 
         {/* Dynamic Legal and Social Navigation links */}
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs">
-          <Link href="#privacy" className="hover:text-stone-200 transition-colors">Privacy Policy</Link>
-          <Link href="#terms" className="hover:text-stone-200 transition-colors">Terms of Service</Link>
+          <Link href="/legal/privacy" className="hover:text-stone-200 transition-colors">Privacy Policy</Link>
+          <Link href="/legal/terms" className="hover:text-stone-200 transition-colors">Terms of Service</Link>
           <Link href="#contact" className="hover:text-stone-200 transition-colors">Contact Support</Link>
         </div>
 
