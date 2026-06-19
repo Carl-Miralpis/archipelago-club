@@ -2,64 +2,87 @@ import WaitlistForm from "../components/WaitlistForm";
 
 export default function Home() {
   return (
-    <div className="relative isolate overflow-hidden bg-gradient-to-b from-emerald-50/50 via-white to-white">
-      {/* Structural background details for visual flair */}
-      <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-        <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-emerald-200 to-teal-400 opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" />
-      </div>
+    <section id="waitlist" className="relative isolate overflow-hidden bg-stone-950 min-h-[85vh] flex items-center">
+      
+      {/* Background radial gradient accent glow effect */}
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.stone.900),theme(colors.stone.950))]" aria-hidden="true" />
+      <div className="absolute top-0 right-1/4 -z-10 h-[400px] w-[400px] rounded-full bg-amber-500/5 blur-[120px]" aria-hidden="true" />
 
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-24 sm:pt-28 sm:pb-32 lg:pt-32">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 lg:py-32 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           
-          {/* Left Column: Direct, conversion-ready copy */}
-          <div className="lg:col-span-7 max-w-2xl lg:max-w-none text-center lg:text-left">
-            <span className="inline-flex items-center rounded-full bg-emerald-100/80 px-3 py-1 text-xs font-medium text-emerald-800 ring-1 ring-inset ring-emerald-600/10 mb-6">
-              Opening Q3 2026 in Calabarzon
-            </span>
-            <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-6xl lg:text-5xl xl:text-6xl">
-              Where high-speed work meets <span className="text-emerald-600">artisan craft.</span>
+          {/* Left Hero Content block */}
+          <div className="lg:col-span-7 text-center lg:text-left space-y-6">
+            <div className="inline-flex items-center gap-2 rounded-full border border-amber-500/20 bg-amber-500/5 px-3 py-1 text-xs font-medium text-amber-400 tracking-wide">
+              <span className="h-1.5 w-1.5 rounded-full bg-amber-400 animate-pulse" />
+              Opening Founding Chapter Q3 2026
+            </div>
+            
+            <h1 className="text-4xl font-bold tracking-tight text-stone-100 sm:text-6xl lg:text-5xl xl:text-6xl leading-[1.1]">
+              Where elite code meets <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-200">coastal luxury.</span>
             </h1>
-            <p className="mt-6 text-lg leading-8 text-slate-600">
-              The Archipelago Club is Calabarzon's upcoming premium smart-cafe and co-working ecosystem. Engineered for digital professionals, remote squads, and creators demanding ultra-fast connectivity, ergonomic sanctuaries, and meticulous specialty roasts.
+            
+            <p className="text-base sm:text-lg leading-relaxed text-stone-400 max-w-2xl mx-auto lg:mx-0">
+              The Archipelago Club is an private workspace network engineered for elite digital creators, systems architects, and remote teams. Merging lightning-fast enterprise arrays with bespoke specialty roasts and deep-focus layout structures along pristine Calabarzon coastlines.
             </p>
             
-            <div className="mt-10 flex flex-col items-center lg:items-start gap-y-4">
+            <div className="pt-4 space-y-3">
               <WaitlistForm />
-              <p className="text-xs text-slate-500">
-                🔒 Zero spam. Early access members unlock 20% off workspace bookings.
+              <p className="text-xs text-stone-500">
+                🔒 Private waitlist active. Accepted members unlock 20% off workspace allocations.
               </p>
             </div>
           </div>
 
-          {/* Right Column: Visual placeholder container simulating Figma-spec placement */}
+          {/* Right Blueprint / Specs Card Container */}
           <div className="lg:col-span-5 w-full max-w-md lg:max-w-none mx-auto">
-            <div className="relative aspect-[4/3] sm:aspect-[16/10] lg:aspect-square rounded-2xl bg-slate-900/5 p-2 ring-1 ring-inset ring-slate-900/10 backdrop-blur-sm shadow-xl overflow-hidden flex items-center justify-center group">
-              <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-950 flex flex-col justify-between p-6 sm:p-8">
-                <div className="flex justify-between items-start">
-                  <div className="space-y-1">
-                    <p className="text-xs font-semibold uppercase tracking-wider text-emerald-400">The Blueprint</p>
-                    <h3 className="text-xl font-bold text-white">Smart Space Features</h3>
-                  </div>
-                  <span className="text-xs bg-white/10 text-white/90 px-2.5 py-1 rounded-md font-mono">v1.0-alpha</span>
-                </div>
-                
-                <div className="space-y-3 font-mono text-xs text-slate-400 my-auto">
-                  <p className="flex items-center gap-2"><span className="text-emerald-500">✓</span> 1Gbps Redundant Fiber Wi-Fi</p>
-                  <p className="flex items-center gap-2"><span className="text-emerald-500">✓</span> Soundproofed Pods for Virtual Meetings</p>
-                  <p className="flex items-center gap-2"><span className="text-emerald-500">✓</span> IoT Smart-Lighting & Ergonomic Seating</p>
-                  <p className="flex items-center gap-2"><span className="text-emerald-500">✓</span> Specialty Coffee Bar & In-house Roastery</p>
-                </div>
+            <div className="relative rounded border border-stone-800 bg-stone-900/40 p-6 sm:p-8 backdrop-blur-md shadow-2xl ring-1 ring-white/5 overflow-hidden">
+              <div className="absolute top-0 right-0 border-b border-l border-stone-800 bg-stone-950 font-mono text-[10px] text-amber-500/70 px-3 py-1 uppercase tracking-widest">
+                System Spec
+              </div>
 
-                <div className="border-t border-white/10 pt-4 flex justify-between items-center text-xs text-slate-400">
-                  <span>Location: Calabarzon, PH</span>
-                  <span className="flex items-center gap-1.5"><span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" /> Live Seat Tracker Active</span>
-                </div>
+              <h2 className="text-sm font-semibold text-stone-300 uppercase tracking-wider mb-6">FOUNDING INFRASTRUCTURE</h2>
+              
+              <ul className="space-y-4 font-mono text-xs text-stone-400">
+                <li className="flex items-start gap-3">
+                  <span className="text-amber-500 font-bold">01/</span>
+                  <div>
+                    <strong className="text-stone-200 block mb-0.5">Dual-Provider Redundancy</strong>
+                    <span>1 Gbps synchronous fiber arrays with automated cellular failover.</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-amber-500 font-bold">02/</span>
+                  <div>
+                    <strong className="text-stone-200 block mb-0.5">Acoustic Seclusion</strong>
+                    <span>Sound-isolated spatial pods built for clear, studio-grade virtual streaming.</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-amber-500 font-bold">03/</span>
+                  <div>
+                    <strong className="text-stone-200 block mb-0.5">Ergonomic Lounges</strong>
+                    <span>Smart climate controllers, adaptive ambient lighting levels, and physical support seating.</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-amber-500 font-bold">04/</span>
+                  <div>
+                    <strong className="text-stone-200 block mb-0.5">Artisan Roastery</strong>
+                    <span>Micro-lot single origins curated explicitly for cognitive clarity and peak performance.</span>
+                  </div>
+                </li>
+              </ul>
+
+              <div className="mt-8 border-t border-stone-800/60 pt-4 flex items-center justify-between font-mono text-[11px] text-stone-500">
+                <span>COORD // 14.15° N, 120.98° E</span>
+                <span className="text-amber-500/80">ALFA-v1.2</span>
               </div>
             </div>
           </div>
 
         </div>
       </div>
-    </div>
+    </section>
   );
 }
